@@ -10,7 +10,7 @@ const Signup = () => {
       console.log('アカウントの作成に成功しました');
       console.log(result.user); // 作成時のuser情報を見れる
 
-      /* [TODO] アカウント作成時にRoomに移動する処理をここに書きたい */
+      /* [TODO] アカウント作成時にRoomに移動する処理をここに書きたい*/
 
     }).catch((error) => {
       console.log('アカウントの作成に失敗しました');
