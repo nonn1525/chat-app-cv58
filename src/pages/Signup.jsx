@@ -12,6 +12,8 @@ const Signup = () => {
 
       /* [TODO] アカウント作成時にRoomに移動する処理をここに書きたい*/
 
+      history.pushState('/');
+
     }).catch((error) => {
       console.log('アカウントの作成に失敗しました');
       console.log(error); // Errorの内容を確認できる

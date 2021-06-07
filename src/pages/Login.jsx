@@ -7,11 +7,14 @@ const Login = () => {
     console.log(data); // react-hook-formを使って取ってきた値を確認できる
     const { email, password } = data;
     auth.signInWithEmailAndPassword(email, password).then((result) => {
+    //ユーザーのメールアドレスとパスワードをsignInWithEmailAndPassword に渡す
       console.log('ログインに成功しました');
       console.log(result.user); // ログイン時のuser情報を見れる
 
       /* [TODO] ログイン時にRoomに移動する処理をここに書きたい */
-
+ 
+        history.pushState('/');
+        //history.pushState => パスやハッシュを変更できる
     }).catch((error) => {
       console.log('ログインに失敗しました');
       console.log(error); // Errorの内容を確認できる
