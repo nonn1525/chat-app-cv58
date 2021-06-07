@@ -15,6 +15,7 @@ const Login = () => {
  
         history.push('/');
         //history.pushState => パスやハッシュを変更できる
+        //history.push => 履歴を追加することで URL を変化させ画面遷移を実現
     }).catch((error) => {
       console.log('ログインに失敗しました');
       console.log(error); // Errorの内容を確認できる
