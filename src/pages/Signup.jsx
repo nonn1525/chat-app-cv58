@@ -12,7 +12,7 @@ const Signup = () => {
 
       /* [TODO] アカウント作成時にRoomに移動する処理をここに書きたい*/
 
-      history.pushState('/');
+      history.push('/');
 
     }).catch((error) => {
       console.log('アカウントの作成に失敗しました');

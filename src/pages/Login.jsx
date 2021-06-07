@@ -13,7 +13,7 @@ const Login = () => {
 
       /* [TODO] ログイン時にRoomに移動する処理をここに書きたい */
  
-        history.pushState('/');
+        history.push('/');
         //history.pushState => パスやハッシュを変更できる
     }).catch((error) => {
       console.log('ログインに失敗しました');
